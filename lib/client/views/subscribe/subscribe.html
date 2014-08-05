@@ -1,9 +1,14 @@
 <template name="MailChimpListSubscribe">
-	<div>
-	{{#if message}}
-		<p class="message">{{message}}</p>
-	{{/if}}
-		<input class="email" type="email" placeholder="email@example.com"/>
-		<button class="subscribe" type="button">Subscribe</button>
+	<div class="mailchimpListSubscribe">
+		{{#if message}}
+			<p class="message">{{message}}</p>
+		{{/if}}
+		<div class="inline fields">
+			<div class="field">
+				<input class="email" type="email" placeholder="What's your email?">
+				<label>Don't worry; we hate spam with a passion.</label>
+			</div>
+		</div>
+		<button class="ui button orange subscribe" type="button">Get free course!</button>
 	</div>
 </template>
